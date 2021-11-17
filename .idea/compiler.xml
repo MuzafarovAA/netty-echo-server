@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty-echo" />
+        <module name="netty-echo-server" />
+        <module name="netty-echo-client" />
       </profile>
     </annotationProcessing>
   </component>
