@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.gb.netty.echo.client</groupId>
-    <artifactId>netty-echo-client</artifactId>
+    <artifactId>client</artifactId>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
