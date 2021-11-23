@@ -1,4 +1,4 @@
-package com.geekbrains.netty.echo.client;
+package ru.gb.netty.echo.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
