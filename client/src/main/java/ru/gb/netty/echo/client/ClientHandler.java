@@ -1,24 +1,17 @@
-package com.geekbrains.netty.echo.server;
+package ru.gb.netty.echo.client;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
-public class ServerHandler extends SimpleChannelInboundHandler<String> {
-
+public class ClientHandler extends SimpleChannelInboundHandler<String> {
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, String message) throws Exception {
-        System.out.println("Received from client: " + message);
-        ctx.writeAndFlush(message);
+        System.out.println("Received from server: " + message);
     }
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        System.out.println("Client connected.");
-    }
-
-    @Override
-    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
-        System.out.println("Client disconnected.");
+        System.out.println("Connected to server.");
     }
 
     @Override

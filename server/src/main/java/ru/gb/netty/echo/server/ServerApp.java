@@ -1,4 +1,4 @@
-package com.geekbrains.netty.echo.server;
+package ru.gb.netty.echo.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -43,7 +43,7 @@ public class ServerApp {
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)
-                    .option(ChannelOption.SO_KEEPALIVE, true);
+                    .childOption(ChannelOption.SO_KEEPALIVE, true);
 
             ChannelFuture future = serverBootstrap.bind(PORT).sync();
             System.out.println("Server started.");
